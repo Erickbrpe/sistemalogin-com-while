@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
 
+<script>
+const usuariocorreto = "admin";
+const senhacorreta = "22";
+  
+let loginsucesso = false;
+
+while(!loginsucesso) {     
+    let usuariodigitado = prompt("digite nome de usuário:");
+    let senhadigitada = prompt("digite a sua senha:");
+  
+    if (usuariodigitado === usuariocorreto && senhadigitada === senhacorreta) {
+        alert("Login efetuado com sucesso! Bem-vindo.");
+        loginsucesso = true;
+    } else {
+        alert("usuário ou senha incorretos. tente novamente!");
+    }
+}
+
+</script>
+
+</body>
+</html>
